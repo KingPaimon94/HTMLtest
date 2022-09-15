@@ -1,0 +1,135 @@
+h1 {
+    color:white;
+}
+h2 {
+    color:white;
+}
+h3 {
+    color:white;
+}
+h4 {
+    color:white;
+}
+h5 {
+    color:white;
+}
+h6 {
+    color:white;
+}
+p {
+    color:white;
+}
+pre {
+    color:gray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+q {
+    color:white;
+}
+bdo {
+    color:white;
+}
+address {
+    color:white;
+}
+mark {
+    color:white;
+    background-color: blueviolet;
+}
+blockquote {
+    color:white;
+}
+a:link {
+    color:red
+}
+a:visited {
+    color: aquamarine;
+}
+a:active {
+    color: yellowgreen;
+}
+a:hover {
+    color: brown;
+}
+abbr {
+    color:blueviolet;
+}
+body {
+    background-color: black;
+}
+.linkbtn:link, .linkbtn:visited{
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.linkbtn:hover {
+    background-color: red;
+}
+#bannertop{
+    top: 3px;
+    position: sticky;
+    width: 100%;
+    border: 3px solid #73AD21;
+    background-color: #477011;
+    margin-left:-3px;
+    margin-top: 10px;
+    display: inline-block;
+}
+#btnfinal {
+    position: absolute;
+    right: 0;
+}
+#bannerspc {
+    height: 15px;
+    display: inline-block;
+}
+.center {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+#Frame {
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+}
+#xclose {
+    background-color: gray;
+    top: 1px;
+    left: 1px;
+    height: 25px;
+    width: 25px;
+}
+#-show {
+    background-color: gray;
+    top: 1px;
+    left: 1px;
+    height: 25px;
+    width: 25px;
+}
+#iframe_gogleID {
+    display: none;
+    height: inherit;
+    width: inherit;
+}
+.bottomright-with-nw-resize-outer {
+    transform: rotateZ(180deg);
+    resize: both;
+    overflow: hidden;
+    padding: 0 8px 8px 0;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+.bottomright-with-nw-resize-inner {
+    transform: rotateZ(180deg);
+    overflow: hidden;
+    display: inline-block;
+    height: inherit;
+    width: inherit;
+}
