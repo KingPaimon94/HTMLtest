@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!--Los documentos html empiezan con "<!DOCTYPE html>" esto indica que el archivo esta escrito en html-->
+<html lang="es-CO"> <!--todo el codigo de html va dentro de la etiqueta <html> </html>-->
+    <head> <!--el encabezado de la pagina que se muestra como el titulo de la pestaña en el navegador se encuentra dentro de la etiqueta <header> </header>, en esta etiqueta tambien se encuentran los metadatos del archivo, asi como los links a los archivos CSS-->
+        <title> 
+            html basics <!--Este es el titulo de la pestaña (nombre de la pagina), los comentarios se pueden ver tambien, cuidado!-->
+        </title> <!--el contenido del encabezado se escribe dentro de la etiqueta <title> </title>, pero title tambien es usada como un "tooltip" para cualquier tipo de elemnto si es usado como un atributo de una etqueta-->
+        <link rel="stylesheet" href="style14092022.css">
+        <link rel="icon" type="image/gif" href="https://my.callofduty.com/cdn/app/loot/vg/s4_emblem_animated_opc_japanese_01.gif">
+    </head>
+    <body> <!--el contenido visible de la pagina web se escribe dentro de la etiqueta <body></body>-->
+    <!--lo siguiente es el CSS detro del codigo html, no se pueden poner comentarios dentro de la etiqueta style-->
+    <style>     
+    </style>
+    <div>
+        <h1>
+            esto es un test
+        </h1>
+    </div>
+    <div id="bannertop">
+        <a href="#inicio" class="linkbtn" id="btninicio">inicio</a>
+        <a href="#final" class="linkbtn" id="btnfinal">final</a>
+    </div>
+    <div>
+        <h1 id="inicio"> <!--esta etiqueta marca un encabezado, el h1 es el que demarca mas importancia y disminuye progresivamente despues de h2 hasta h6 -->
+            This is a heading 
+        </h1>
+        <h2 style="font-family:'Courier New', Courier, monospace;color: white; text-align: center;font-size: 60px;"> <!--el atributo stile puede contener muchas variables que cambian como se muestra el contenido de varias etiquetas, es un componente CSS que es usado para cada etiqueta, los archivos CSS adicionales pueden usarse para darle formato a una pagina sin necesidad de editar cada etiqueta por separado-->
+            This is an h2 heading
+        </h2>
+        <h3 style="background-color: Lime;"><!--se puede poner un color de fondo a un componente-->
+            this is an h3 heading
+        </h3>
+        <h4 style="border: 2px solid rgb(85, 184, 85, 0.8);">
+            this is an h4 heading
+        </h4>
+        <h5>
+            this is an h5 heading
+        </h5>
+        <h6 style="font-size: 60px;"> <!--aunque el tamaño de los encabezados va disminuyendo con su importancia se puede usar el atributo CSS font-size para modificar el tamaño del texto-->
+            this is an h6 heading
+        </h6>
+            <div class="bottomright-with-nw-resize-outer" id="Frame">
+                <div class="bottomright-with-nw-resize-inner" id="Frame2">
+                    <img src="https://www.i2symbol.com/images/symbols/punctuation/modifier_letter_small_x_u02E3_icon_256x256.png" id="xclose" onclick="document.getElementById('iframe_gogleID').style.display='none'"onclick="document.getElementById('Frame2').style.height='fit-content'" onclick="document.getElementById('Frame2').style.width='fit-content'"onclick="document.getElementById('iframe_gogleID').style.height='0px'" onclick="document.getElementById('iframe_gogleID').style.width='0px'">
+                    <img src="https://www.i2symbol.com/images/symbols/punctuation/em_dash_u2014_icon_128x128.png" id="-show" onclick="document.getElementById('iframe_gogleID').style.display='block'">
+                    <br>
+                    <iframe id="iframe_gogleID" title="Iframe" name="Iframe_gogle">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <p> <!-- esta etiqueta demarca el inicio de un parrafo -->
+            this is a paragraph
+        </p>
+        <hr> <!-- esto dibuja una linea horizontal en la pagina web, es usado para indicar un salto de seccion o separar contenido-->
+        <a href="https://www.w3schools.com" title="link directo a W3Schools" target="_blank"> <!-- los hipervinculos se ponen en la etiqueta <a href=""></a> el link se determina por el atributo href y el texto que llevaa el link se copia dentro de las etiquetas. las imagenes tambien pueden ser usadas en vez de texto dentro de la etiqueta-->
+            Esto es un link
+        </a>
+        <br>
+        <a href="https://www.w3schools.com" title="esta imagen tambien es un link" target="_blank">
+            <img src="https://www.w3schools.com/html/w3schools.jpg" alt="W3Schools.com" width="104" height="142"> <!-- la etiqueta <img> se usa para incluir imagenes en la pagina web, el atributo src (Search) ndica donde buscar la imagen, el atributo alt es el nombre alternativo de la imagen y las medidas width y height dn las dimensiones de la imagen-->
+        </a>
+        <hr>
+        <pre> a
+            El      texto mostrado aqui va a 
+
+
+            mostrar todo el       formato completo
+        </pre>
+        <pre>
+por eso es mejor copiar el formato de esta manera, evitando los espacios al principio
+        </pre>
+        <hr>
+        <h2>
+            Formato de Texto
+        </h2>
+        <pre style="font-family:timesnewroman;">
+            <b>este texto esta en negrita</b>
+            <strong>este texto es importante</strong> <!-- esto dara importancia al texto para los buscadores-->
+            <i>este texto esta en cursiva</i>
+            <em>este texto esta siendo enfatizado</em> <!--- esto hara que los lectores de pantalla lean con enfasis la palabra-->
+            <mark style="background-color:blue;">este texto esta resaltado</mark>
+            este texto fue <del>borrado</del><ins>insertado</ins>
+            Hola<sub>esto es un subindice</sub>
+            Mundo!<sup>esto es un superindice</sup>
+        </pre>
+        <hr>
+        <h2>
+            Comillas y citas
+        </h2>
+        <q>este texto esta dentro de comillas</q>
+        <p>el siguiente texto va a ser citado de WWF</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">For 50 years, WWF has been protecting the future of nature.
+            The world's leading conservation organization,
+            WWF works in 100 countries and is supported by
+            1.2 million members in the United States and
+            close to 5 million globally.
+        </blockquote> <!-- este texto va a ser identado, se agregara un tabulador a todo el texto-->
+        <p> el texto <a href="https://en.wikipedia.org/wiki/Template:Abbr"><abbr title="abreviado">abbr</abbr></a> se subraya con puntos</p> <!--se puede usar el atributo title para que muestre un tooltip con su significado, incluso se puede utilizar un hipervinculo-->
+        <p><mark>etiqueta address</mark></p>
+        <address> <!--el contenido en la etiqueta address se pondra en cursiva y se agregara un <br> al inicio y al final del contenido-->
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+        <img class="center" src="https://th.bing.com/th/id/R.ac89d9c02ab5c32586ea1a9b6f629b6b?rik=Z5NTGsNLH%2fySww&riu=http%3a%2f%2fp7.itc.cn%2fq_70%2fimages03%2f20201230%2f89d5e8fde3c446b881378aa51e25841c.jpeg&ehk=OY8bqAUw3ZWerccIjcc2%2bfRS6jjwMVxNUnISvuMtNfU%3d&risl=&pid=ImgRaw&r=0" alt="the scream">
+        <p style="text-align: center;">la etiqueta cite pondra el texto en cursiva: <cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p> <!-- el texto dentro de la etiqueta cite se pondra en cursiva, los nombres no son citas-->
+        <br>
+        <hr>
+        <h2>BDO</h2>
+        <bdo dir="rtl"> <!-- el atributo dir indica en que direccion se mostrara el texto-->
+            la etiqueta <abbr title="Bi-Directional Override">bdo</abbr> cambiara la direccion del texto
+            <br>
+            otxet led noiccerid al araibmac <abbr title="Bi-Directional Override">odb</abbr> ateuqite al
+        </bdo>
+        <h2> pruebas con CSS</h2>
+        <p id=>Boton link</p>
+        <a href="file:///C:/Users/Usuario/Documents/Coding/HTML/Test%2014092022.html" target="Iframe_gogle" class="linkbtn" title="ir a W3s" onclick="document.getElementById('iframe_gogleID').style.display='block'">
+        click me
+        </a>
+    </div>
+    <div id="final"></div>
+    </body>
+</html>
